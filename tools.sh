@@ -38,7 +38,7 @@ apt autoremove -y >/dev/null 2>&1
 sudo apt-get -y install vnstat
 /etc/init.d/vnstat restart
 sudo apt-get -y install libsqlite3-dev
-wget --no-check-certificate http://rmbl-vpn.my.id/vnstat-2.6.tar.gz
+wget https://github.com/okysmilee2/Vnstat/releases/download/vnstat/vnstat-2.6.tar.gz
 tar zxvf vnstat-2.6.tar.gz
 cd vnstat-2.6
 ./configure --prefix=/usr --sysconfdir=/etc && make && make install
